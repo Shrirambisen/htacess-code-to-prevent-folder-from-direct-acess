@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC] 
+RewriteRule (.*) - [F]
+
+</IfModule>
+
